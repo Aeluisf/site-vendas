@@ -135,7 +135,7 @@ body {
 
 /*foto.sombra-interna DA TAG HOME*/
 .home .foto.sombra-interna {
-   background: linear-gradient(to right, #8A35C8, #18C063, #00EEA2);
+   background: linear-gradient(to right, #000000, #00354e, #000000);
    background-size: 180% 180%;
    animation: gradient-animation 5s ease infinite;
 }
@@ -167,7 +167,23 @@ body {
 
 }
 
+.projetos .titulo{
+   background: none;
+   border: 1px solid #fff;
+   border-radius: 15px;
+   color: #fff;
+   width: 300px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*PROJETO DA TAG PROJETOS*/
+
 .projetos .projeto {
    max-width: 260px;
    max-height: 500px;
@@ -229,11 +245,12 @@ body {
    padding: 20px;
    font-size: 18px;
    font-weight: 600;
-   margin: 0 auto;
+   margin: 80px auto;
    display: flex;
    justify-content: center;
    align-items: center;
    cursor: pointer;
+   
 
 }
 
@@ -246,6 +263,39 @@ body {
 
 .projetos .btn-mostrar-projetos.remover {
    display: none;
+
+}
+.projetos .btn-remover-projetos {
+   background: none;
+   border: 1px solid #fff;
+   border-radius: 15px;
+   color: #fff;
+   width: 180px;
+   padding: 20px;
+   font-size: 18px;
+   font-weight: 600;
+   margin: 80px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   
+
+}
+
+
+.projetos .btn-remover-projetos:hover {
+   background-color: #9443d8;
+   transition: 0.4s;
+
+}
+
+.projetos .btn-remover-projetos.remover {
+   display: none;
+
+}
+.projetos .btn-remover-projetos.adicinar {
+   display: block;
 
 }
 

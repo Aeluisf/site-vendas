@@ -20,7 +20,6 @@ const botaoMostarprojetos = document.querySelector('.btn-mostrar-projetos');
 const projetodesativados = document.querySelectorAll('.projeto:not(.ativo');
 
 
-
 botaoMostarprojetos.addEventListener('click', () => {
    // passo 3 - adicionar a classe "ativo" nos projetos escondidos 
    MostarMaisProjetos();
@@ -31,12 +30,19 @@ botaoMostarprojetos.addEventListener('click', () => {
     
 }); 
 
-function esconderbotao() {
-    botaoMostarprojetos.classList.add('remover');
-}
-
 function MostarMaisProjetos() {
     projetodesativados.forEach(projetodesativado => {
         projetodesativado.classList.add('ativo');
     });
 }
+
+
+
+const botaoRemoverproj = document.querySelector('.btn-remover-projetos');
+
+botaoRemoverproj.addEventListener('click', () => {
+   projetodesativados.forEach(projetodesativado => {
+         projetodesativado.classList.remove('ativo')
+   });
+});
+
