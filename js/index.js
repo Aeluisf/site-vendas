@@ -46,3 +46,23 @@ botaoRemoverproj.addEventListener('click', () => {
    });
 });
 
+let mais = document.getElementById("mostrarma");
+let menos = document.getElementById("mostrarme");
+
+function MostarMaisProjetos() {
+    mais.style.display = "none";
+    menos.style.display = "block";
+
+    projetodesativados.forEach(projetodesativado => {
+        projetodesativado.classList.add('ativo');
+    });
+}
+
+botaoRemoverproj.addEventListener('click', () => {
+    mais.style.display = "block";
+    menos.style.display = "none";
+
+   projetodesativados.forEach(projetodesativado => {
+         projetodesativado.classList.remove('ativo')
+   });
+});

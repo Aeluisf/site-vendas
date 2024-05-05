@@ -294,10 +294,6 @@ body {
    display: none;
 
 }
-.projetos .btn-remover-projetos.adicinar {
-   display: block;
-
-}
 
 /*CORES DO FUNDO DA FOTO DO POTIFOLIO*/
 @keyframes gradient-animation {
