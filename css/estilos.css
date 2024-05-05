@@ -290,11 +290,6 @@ body {
 
 }
 
-.projetos .btn-remover-projetos.remover {
-   display: none;
-
-}
-
 /*CORES DO FUNDO DA FOTO DO POTIFOLIO*/
 @keyframes gradient-animation {
    0% {
